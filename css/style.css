@@ -11,10 +11,12 @@ h1 {
     font-size: 2.8rem;
 }
 
-p {}
-
 .header-bg-color {
     background-image: linear-gradient(to right, #8A0F86, #AE287D);
+}
+
+.margin-top-design {
+    margin-top: 80px;
 }
 
 .navbar-brand {
@@ -36,13 +38,47 @@ p {}
 }
 
 .botton-design {
+    color: #FFFFFF;
     background-color: #F53878;
     border: 2px solid transparent;
 }
 
 .botton-design:hover {
+    color: #F53878;
     background-color: transparent;
     border: 2px solid #F53878;
+}
+
+.card-image {
+    background-color: #eaeaea;
+    height: 300px;
+}
+
+.card-img-height {
+    height: 100%;
+}
+
+.custom-bg {
+    background-color: #eaeaea;
+}
+
+.custom-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom-responsive .custom-image {
+    width: 90px;
+}
+
+.custom-responsive .custom-image img {
+    width: 80%;
+    margin: auto;
+}
+
+.custom-responsive .detail p {
+    font-size: 14px;
 }
 
 /* 
@@ -50,6 +86,34 @@ p {}
             Media Query
 ------------------------------- 
 */
+@media screen and (max-width:360px) {
+    .card-image {
+        background-color: #eaeaea;
+        height: 200px;
+    }
+
+    .card-img-height {
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width:460px) {
+    .custom-responsive {
+        display: block;
+    }
+
+    .custom-responsive .custom-image {
+        width: 90px;
+        margin: auto;
+    }
+
+    .custom-responsive .detail {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
 @media screen and (min-width:280px) and (max-width:767px) {
     .sm-device-text {
         text-align: center;
@@ -65,6 +129,6 @@ p {}
 @media screen and (min-width:768px) and (max-width:991px) {
     .banner-p {
         font-size: 0.9rem;
-        width: 100%;
+        width: 95%;
     }
 }
