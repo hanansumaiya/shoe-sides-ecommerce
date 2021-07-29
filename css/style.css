@@ -1,0 +1,70 @@
+/* Custom font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+p {}
+
+.header-bg-color {
+    background-image: linear-gradient(to right, #8A0F86, #AE287D);
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+
+}
+
+.logo-color {
+    color: #F53878;
+}
+
+.banner-p {
+    font-size: 0.9rem;
+    width: 75%;
+}
+
+.botton-design {
+    background-color: #F53878;
+    border: 2px solid transparent;
+}
+
+.botton-design:hover {
+    background-color: transparent;
+    border: 2px solid #F53878;
+}
+
+/* 
+-------------------------------
+            Media Query
+------------------------------- 
+*/
+@media screen and (min-width:280px) and (max-width:767px) {
+    .sm-device-text {
+        text-align: center;
+    }
+
+    .banner-p {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+}
+
+/* --------------------------------------------------- */
+@media screen and (min-width:768px) and (max-width:991px) {
+    .banner-p {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+}
